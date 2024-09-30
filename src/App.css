@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+/* Sidebar styling */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  /* Hidden by default (off-screen to the right) */
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  transition: 0.3s;
+  /* Smooth slide effect */
+  z-index: 1000;
+  /* On top of the page */
+  padding-top: 60px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar a:hover {
+  color: #f1f1f1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Open the sidebar when 'sidebar-open' class is applied */
+.sidebar-open {
+  right: 0;
+  /* Sidebar slides in from the right */
 }
 
-.App-link {
-  color: #61dafb;
+/* Sidebar button to toggle the sidebar */
+.toggle-btn {
+  background-color: transparent;
+  /* No background */
+  border: none;
+  /* No border */
+  position: fixed;
+  right: 10px;
+  /* Position button on the right */
+  top: 10px;
+  z-index: 1001;
+  /* Keep on top of the sidebar */
+  padding: 0;
+  /* No padding */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Optional: overlay effect when sidebar is open */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  z-index: 999;
+  /* Below the sidebar, but above the content */
 }
