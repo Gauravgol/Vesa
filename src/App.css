@@ -39,17 +39,16 @@
 /* Sidebar button to toggle the sidebar */
 .toggle-btn {
   background-color: transparent;
-  /* No background */
+  
   border: none;
-  /* No border */
-  position: fixed;
+  /* position: fixed;
   right: 10px;
-  /* Position button on the right */
+   
   top: 10px;
-  z-index: 1001;
-  /* Keep on top of the sidebar */
+  z-index: 1001; */
+
   padding: 0;
-  /* No padding */
+  
 }
 
 /* Optional: overlay effect when sidebar is open */

@@ -2,6 +2,7 @@ import React from 'react';
 
 const Home: React.FC = () => {
   return (
+    <div className='container-fluid' style={{padding:"0px"}}>
     <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-indicators">
         <button
@@ -78,6 +79,7 @@ const Home: React.FC = () => {
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
       </button>
+    </div>
     </div>
   );
 };
