@@ -32,7 +32,8 @@ const NavBar: React.FC = () => {
 
  
   <li className="nav-item">
-  <i className="fa-solid fa-cart-shopping"></i>
+ 
+  <i className="fa-solid fa-cart-shopping" style={{marginRight:"20px", paddingTop:"7px"}}></i>
     <button className="toggle-btn" onClick={toggleSidebar}>
     <span className="navbar-toggler-icon" />
     </button>

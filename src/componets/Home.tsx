@@ -1,4 +1,5 @@
 import React from 'react';
+import CardCarousel from './CardCarousel';
 
 const Home: React.FC = () => {
   return (
@@ -80,6 +81,8 @@ const Home: React.FC = () => {
         <span className="visually-hidden">Next</span>
       </button>
     </div>
+
+    <CardCarousel/>
     </div>
   );
 };
