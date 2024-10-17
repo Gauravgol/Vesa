@@ -82,7 +82,7 @@ const Home: React.FC = () => {
       </button>
     </div>
 
-    <CardCarousel/>
+    {/* <CardCarousel/> */}
     </div>
   );
 };
